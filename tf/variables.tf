@@ -20,3 +20,7 @@ variable "enable_ec2" {
   description = "Enable the specified module or not"
 }
 
+variable "data_file" {
+  default     = "modules/ec2_instance/user_data/tools-installer.sh"
+  description = "Set filename for user_data option"
+}

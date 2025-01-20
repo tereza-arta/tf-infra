@@ -38,7 +38,8 @@ resource "aws_instance" "ec2" {
   subnet_id                   = var.subnet_id
   vpc_security_group_ids      = [var.sec_group_id]
   #key_name = aws_key_pair.key.key_name
-  key_name = "demo"
+  key_name  = "demo"
+  user_data = file(var.data_file)
 
   tags = {
     Name = var.instance_tag

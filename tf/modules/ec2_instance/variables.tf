@@ -68,6 +68,11 @@ variable "sec_group_id" {
   type = any
 }
 
+variable "data_file" {
+  default     = "some-file.sh"
+  description = "Name of user-data file"
+}
+
 variable "instance_tag" {
   default = "Custom EC2"
 }

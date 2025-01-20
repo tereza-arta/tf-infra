@@ -9,4 +9,5 @@ module "ec2_instance" {
   count        = var.enable_ec2 ? 1 : 0
   subnet_id    = module.vpc[0].pub_sub_id
   sec_group_id = module.vpc[0].sec_group_id
+  data_file    = var.data_file
 }
