@@ -47,7 +47,7 @@ variable "ami_owner_id" {
 }
 
 variable "instance_type" {
-  default     = "t3.micro"
+  default     = "t3.small"
   description = "Type of EC2 instance(Mix of the CPU,RAM,Disk,Network components)"
 }
 
